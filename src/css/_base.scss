@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+    font-family: $font-main;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+	max-width: $fullW;
+    background: url('../img/cont1b.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+    height: 300px;
+}

@@ -1,4 +1,15 @@
-$primary-color: #333;
-h1 {
-    color: $primary-color;
-}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+$baseC: #000000;
+$whiteC: #FFFFFF;
+$orangeC: #F27C1D;
+$yellowC: #FAB602;
+$menuMobileB: #37243F;
+$menuActiveB: #523A5F;
+$menuYellowC: #F9B306;
+$div3B: #FCF8ED;
+
+$fullW: 1890px;
+$margin: 15px;
+
+$font-main: 'PT Sans', 'Georgia', sans-serif;

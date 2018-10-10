@@ -1,9 +1,5 @@
-var path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-var miniCSS = new MiniCssExtractPlugin({
-    filename: 'main.css'
-});
+const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: './src/js/app.js',
@@ -20,28 +16,29 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['@babel/env']
+                            presets: ['@babel/preset-env']
                         }
                     }
                 ]
             },
             {
+                test: /\.(png|svg|jpe?g|gif)$/,
+                use: ['file-loader']
+            },
+            {
                 test: /\.scss$/,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'sass-loader'
-                    }
+                    // fallback to style-loader in development
+                    process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
                 ]
             }
         ]
     },
     plugins: [
-        miniCSS
+        new MiniCssExtractPlugin({
+            filename: 'main.css'
+        })
     ]
 };
