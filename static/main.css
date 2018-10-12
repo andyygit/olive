@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    max-width: 1890px;
+    min-height: 300px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    float: left;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 30px 15px;
+}
+
+nav a:hover {
+    background-color: #523a5f;
+    color: #FAB602;
+}
+
+article {
+    margin: 0px 15px 0px 15px;
+    padding: 100px 15px 100px 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li {
+    display: block;
+}
+
+footer {
+    min-height: 150px;
+    background: linear-gradient(to bottom, #db9942, #fbb603);
+    padding: 50px 15px;
+    font-size: 16px;
+}
+
+footer .col4-2 {
+    float: left;
+    margin: 0px;
+}
+
+footer ul a {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.clear:before,
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    margin-left: 50%;
+}
+
+.col4-1 {
+    width: 25%;
+    margin-top: 100px;
+}
+
+.col4-2 {
+    width: 50%;
+    margin-top: 100px;
+}
+
+.col4-3 {
+    width: 75%;
+    margin-top: 100px;
+}
+
+.col4-4 {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: solid 2px #F27C1D;
+    font-size: 18px;
+    font-weight: 700;
+    color: #F27C1D;
+}
+
+.logo a {
+    display: block;
+    padding: 10px 0px;
+    margin-right: 200px;
+}
+
+.s1 {
+    background: url(img/bg/cont1b.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.s1 h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.s1 h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.s1 .hero1 .container article {
+    padding-bottom: 250px;
+}
+
+.s3 h2 {
+    color: #FAB602;
+}
+
+.s2 {
+    background: url(img/bg/cont2b.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+}
+
+.s3 {
+    background-color: #fcf8ed;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero1 {
+    max-width: 100%;
+    background: url(img/overlay/hero1b.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.hero2 {
+    margin-top: 60px;
+    background: url(img/overlay/hero2b.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.hero3 {
+    background: url(img/overlay/hero3b.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .85;
+}
+
+.modal {
+    position: absolute;
+    top: 80%;
+    margin: 0px 15px 0px 15px;
+    background-color: #fcf8ed;
+    border-radius: 25px;
+    box-shadow: 0px 20px 50px black;
+}
+
+.modal h1 {
+    font-size: 60px;
+}
+
+.modal .col4-1 {
+    float: left;
+    margin: 0px;
+    padding: 25px;
+    color: #000000;
+}
+
+.modal .col4-1:first-of-type::before {
+    content: 'Recent updates';
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.modal .col4-1:last-child {
+    background: linear-gradient(to bottom, #fab306, #f38637);
+    border-radius: 0px 25px 25px 0px;
+    color: white;
+}
+
+.menuitem1 {
+    display: none;
+    position: absolute;
+    padding: 0px 25px;
+    left: 0px;
+    top: 100%;
+    background-color: #523a5f;
+    border-radius: 0px 0px 25px 25px;
+    width: 100%;
+    z-index: 10;
+}
+
+@media only screen and (max-width:760px) {
+    .logo {
+        display: none;
+    }
+
+    nav,
+    nav a, .col4-1, .hero1 .col4-1:last-child {
+        width: 100%;
+    }
+
+    .hero1 {
+        background: url(img/overlay/mini/hero1bm.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+    
+    .hero1 .col4-1:last-child {
+        border-radius: 0px 0px 25px 25px;
+    }
+    
+    .hero2 .col4-2 {
+        margin-top: 250px;
+    }
+
+    .hero3 {
+        background: url(img/overlay/mini/hero3bm.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
