@@ -1,25 +1,92 @@
 * {
-	margin: 0;
-    font-family: $font-main;
-	box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
 html {
     font-size: 16px;
-    font-weight: 700;
 }
 
 body {
-    margin: 0px;
+    max-width: $maxW;
+    margin: 0px auto;
+    padding: 0px;
 }
 
-.container {
-	max-width: $fullW;
-    background: url('../img/cont1b.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	margin-left: auto;
-	margin-right: auto;
-    height: 300px;
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: relative;
+    a {
+        display: block;
+        float: left;
+        color: $alb;
+        font-size: 18px;
+        font-weight: $normal;
+        padding: 30px 15px;
+        @include break(760px) {
+            width: 100%;
+        }
+    }
+    a:hover {
+        background-color: $mov;
+        color: $galben;
+    }
+    @include break(760px) {
+        width: 100%;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li {
+    display: block;
+}
+
+footer {
+    min-height: 150px;
+    background: linear-gradient(to bottom, $gradient1-1, $gradient1-2);
+    padding: 50px 15px;
+    font-size: 16px;
+    .col4-2 {
+        float: left;
+        margin: 0px;
+    }
+    ul a {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        font-weight: 400;
+        color: $alb;
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: solid 2px $portocaliu;
+    font-size: 18px;
+    font-weight: $bold;
+    color: $portocaliu;
+}
+
+.logo {
+    @include break(760px) {
+        display: none;
+    }
+}
+
+.logo a {
+    display: block;
+    padding: 10px 0px;
+    margin-right: 200px;
 }

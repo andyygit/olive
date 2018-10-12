@@ -1,0 +1,186 @@
+.clear:before,
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    margin-left: 50%;
+}
+
+.col4-1 {
+    width: 25%;
+    margin-top: 100px;
+    @include break(760px) {
+        width: 100%;
+    }
+}
+
+.col4-2 {
+    width: 50%;
+    margin-top: 100px;
+}
+
+.col4-3 {
+    width: 75%;
+    margin-top: 100px;
+}
+
+.col4-4 {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s1 {
+/*
+    background: url(img/bg/cont1b.jpg);
+*/
+    background: url(../img/bg/cont1b.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $alb;
+    font-size: 14px;
+    h1 {
+        font-size: 80px;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: $normal;
+        text-transform: uppercase;
+    }
+    .hero1 .container article {
+        padding-bottom: 250px;
+    }
+}
+
+.s2 {
+/*
+    background: url(img/bg/cont2b.jpg);
+*/
+    background: url(../img/bg/cont2b.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+}
+
+.s3 {
+    background-color: $alb2;
+    font-size: 16px;
+    h2 {
+        color: $galben;
+    }
+}
+
+.hero1 {
+    max-width: 100%;
+/*
+    background: url(img/overlay/hero1b.png);
+*/
+    background: url(../img/overlay/hero1b.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    @include break(760px) {
+/*
+        background: url(img/overlay/mini/hero1bm.png);
+*/
+        background: url(../img/overlay/mini/hero1bm.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero2 {
+    margin-top: 60px;
+/*
+    background: url(img/overlay/hero2b.png);
+*/
+    background: url(../img/overlay/hero2b.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    .col4-2 {
+        @include break(760) {
+            margin-top: 250px;
+        }
+    }
+}
+
+.hero3 {
+/*
+    background: url(img/overlay/hero3b.png);
+*/
+    background: url(../img/overlay/hero3b.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .85;
+    @include break(760px) {
+/*
+        background: url(img/overlay/mini/hero3bm.jpg);
+*/
+        background: url(../img/overlay/mini/hero3bm.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 80%;
+    margin: 0px 15px 0px 15px;
+    background-color: $alb2;
+    border-radius: 25px;
+    box-shadow: 0px 20px 50px $negru;
+    h1 {
+        font-size: 60px;
+    }
+    .col4-1 {
+        float: left;
+        margin: 0px;
+        padding: 25px;
+        color: $negru;
+    }
+    .col4-1:first-of-type::before {
+        content: 'Recent updates';
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: $bold;
+    }
+    .col4-1:last-child {
+        background: linear-gradient(to bottom, $gradient2-1, $gradient2-2);
+        border-radius: 0px 25px 25px 0px;
+        color: $alb;
+        @include break(760) {
+            width: 100%;
+            border-radius: 0px 0px 25px 25px;
+        }
+    }
+}
+
+.menuitem1 {
+    display: none;
+    position: absolute;
+    padding: 0px 25px;
+    left: 0px;
+    top: 100%;
+    background-color: $mov;
+    border-radius: 0px 0px 25px 25px;
+    width: 100%;
+    z-index: 10;
+}

@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
-$baseC: #000000;
-$whiteC: #FFFFFF;
-$orangeC: #F27C1D;
-$yellowC: #FAB602;
-$menuMobileB: #37243F;
-$menuActiveB: #523A5F;
-$menuYellowC: #F9B306;
-$div3B: #FCF8ED;
+$alb: #FFFFFF;
+$alb2: #fcf8ed;
+$negru: #000000;
+$mov: #523a5f;
+$galben: #FAB602;
+$portocaliu: #F27C1D;
+$gradient1-1: #db9942;
+$gradient1-2: #fbb603;
+$gradient2-1: #fab306;
+$gradient2-2: #f38637;
 
-$fullW: 1890px;
-$margin: 15px;
 
-$font-main: 'PT Sans', 'Georgia', sans-serif;
+$fontBase: 16px;
+$normal: 400;
+$bold: 700;
+
+$maxW: 1890px;
+$colMargin: 100px;
