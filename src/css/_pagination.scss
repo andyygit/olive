@@ -46,7 +46,7 @@
 }
 
 .s1 {
-/*
+    /*
     background: url(img/bg/cont1b.jpg);
 */
     background: url(../img/bg/cont1b.jpg);
@@ -70,7 +70,7 @@
 }
 
 .s2 {
-/*
+    /*
     background: url(img/bg/cont2b.jpg);
 */
     background: url(../img/bg/cont2b.jpg);
@@ -90,14 +90,14 @@
 
 .hero1 {
     max-width: 100%;
-/*
+    /*
     background: url(img/overlay/hero1b.png);
 */
     background: url(../img/overlay/hero1b.png);
     background-position: top right;
     background-repeat: no-repeat;
     @include break(760px) {
-/*
+        /*
         background: url(img/overlay/mini/hero1bm.png);
 */
         background: url(../img/overlay/mini/hero1bm.png);
@@ -108,7 +108,7 @@
 
 .hero2 {
     margin-top: 60px;
-/*
+    /*
     background: url(img/overlay/hero2b.png);
 */
     background: url(../img/overlay/hero2b.png);
@@ -122,7 +122,7 @@
 }
 
 .hero3 {
-/*
+    /*
     background: url(img/overlay/hero3b.png);
 */
     background: url(../img/overlay/hero3b.png);
@@ -131,7 +131,7 @@
     background-size: contain;
     opacity: .85;
     @include break(760px) {
-/*
+        /*
         background: url(img/overlay/mini/hero3bm.jpg);
 */
         background: url(../img/overlay/mini/hero3bm.jpg);
@@ -155,8 +155,23 @@
         margin: 0px;
         padding: 25px;
         color: $negru;
+        &:first-of-type::before {
+            content: 'Recent updates';
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: $bold;
+        }
+        &:last-child {
+            background: linear-gradient(to bottom, $gradient2-1, $gradient2-2);
+            border-radius: 0px 25px 25px 0px;
+            color: $alb;
+            @include break(760) {
+                width: 100%;
+                border-radius: 0px 0px 25px 25px;
+            }
+        }
     }
-    .col4-1:first-of-type::before {
+    /*    .col4-1:first-of-type::before {
         content: 'Recent updates';
         margin-bottom: 30px;
         font-size: 18px;
@@ -170,7 +185,7 @@
             width: 100%;
             border-radius: 0px 0px 25px 25px;
         }
-    }
+    }*/
 }
 
 .menuitem1 {
