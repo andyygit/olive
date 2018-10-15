@@ -124,9 +124,14 @@ footer ul a {
 }
 
 .logo a {
+    float: left;
     display: block;
     padding: 10px 15px;
     margin-right: 200px;
+}
+
+.logo #hamburger {
+    display: none;
 }
 
 .s1 {
@@ -248,12 +253,17 @@ footer ul a {
         font-size: 16px;
     }
     
-    .logo {
-        display: none;
+    .logo #hamburger {
+        display: block;
+        float: right;
     }
-
+    
+    .logo a {
+        margin-right: 0px;
+    }
+    
     nav,
-    nav a, .col4-1, .col4-2, .col4-3, .col4-4 {
+    nav a, .logo, .col4-1, .col4-2, .col4-3, .col4-4 {
         width: 100%;
     }
     
