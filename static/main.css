@@ -262,6 +262,10 @@ footer ul a {
         margin-right: 0px;
     }
     
+    nav {
+        display: none;
+    }
+    
     nav,
     nav a, .logo, .col4-1, .col4-2, .col4-3, .col4-4 {
         width: 100%;
