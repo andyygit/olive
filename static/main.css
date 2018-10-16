@@ -281,6 +281,10 @@ footer ul a {
         top: 38px;
         margin-left: 0px;
     }
+    
+    .menuitem1 {
+        top: 84px;
+    }
 
     .hero1 {
         background: url(img/overlay/mini/hero1bm.png);
